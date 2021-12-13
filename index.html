@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="icon" type="image/icon" href="./images/icons/my_logo.png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>myPortfolio</title>
+</head>
+<body>
+    
+    <div class="container">  <!-- Container -->
+
+        <!-- Left congtent -->
+        <div class="content__left" id="content__left">
+           <img class="content__left--avatar" src="./images/avatar.jpg" width="120" height="120" alt="
+           Picture of a girl">
+           <h2 class="content__left--heading">portfolio</h2>
+           <p class="content__left--text">Template by W3.CSS</p>
+
+           <ul class="content__left--list">
+               <li class="content__left--items image1">
+                   <a class="content__left--links" onclick="close()" href="#1">
+                    portfolio
+                   </a>
+               </li>
+               <li class="content__left--items image2">
+                   <a class="content__left--links" onclick="close()" href="#2">
+                    about
+                   </a>
+               </li>
+               <li class="content__left--items image3">
+                   <a class="content__left--links" onclick="close()" href="#3">
+                    contact
+                </a>
+               </li>
+           </ul>
+
+           <ul class="content__left--sites">
+               <li><a href=""><img src="./images/icons/facebook.png" alt="social networks icon"></a></li>
+               <li><a href=""><img src="./images/icons/instagram.png" alt="social networks icon"></a></li>
+               <li><a href=""><img src="./images/icons/snapchat.png" alt="social networks icon"></a></li>
+               <li><a href=""><img src="./images/icons/pinterest.png" alt="social networks icon"></a></li>
+               <li><a href=""><img src="./images/icons/twitter.png" alt="social networks icon"></a></li>
+               <li><a href=""><img src="./images/icons/linkedin.png" alt="social networks icon"></a></li>
+           </ul>
+        </div>
+        
+        <!-- Right content -->
+
+        <div class="main--wrapper"> <!-- Wrapper -->
+
+            <div class="site__mobi"> <!-- mobi visually -->
+                <img class="site__mobi--hamburger" onclick="site_bar()" src="./images/icons/menu.png" alt="hamburger icon" width="50" height="40">
+                <img class="site__mobi--img" src="./images/avatar.jpg" alt="women image" width="65" height="65">
+            </div>
+
+            <h1 class="site-heading" id="1">
+                My Portfolio
+            </h1>
+            
+            <nav class="site--nav">
+                <span class="site--nav--filter">filter:</span>
+                <button class="site--nav--btn active">all</button>
+                <button class="site--nav--btn passive diamond">design</button>
+                <button class="site--nav--btn passive picture">photos</button>
+                <button class="site--nav--btn passive art">art</button>
+            </nav>            
+
+            <main class="main"> <!-- Main -->
+                <section class="lists__section"> <!-- Lists__section -->
+                    <h2 class="visually-hidden">Lists section</h2> <!-- no visible -->
+                    <ul class="lists__section--cards">
+                        <li class="lists__section--list">
+                            <img class="lists__section--image" src="./images/mountains.jpg" alt="Image mountains" width="412" height="auto">
+                           <div class="lists__section--text">
+                            <h3 class="lists__section--list--heading">Lorem Ipsum</h3>
+                            <p class="lists__section--list--info">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                           </div>
+                        </li>
+                        <li class="lists__section--list">
+                            <img class="lists__section--image" src="./images/lights.jpg" alt="Image light" width="412" height="auto">
+                           <div class="lists__section--text">
+                            <h3 class="lists__section--list--heading">Lorem Ipsum</h3>
+                            <p class="lists__section--list--info">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                           </div>
+                        </li>
+                        <li class="lists__section--list">
+                            <img class="lists__section--image" src="./images/nature.jpg" alt="Image nature" width="400" height="300">
+                           <div class="lists__section--text">
+                            <h3 class="lists__section--list--heading">Lorem Ipsum</h3>
+                            <p class="lists__section--list--info">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                           </div>
+                        </li>
+                        <li class="lists__section--list">
+                            <img class="lists__section--image" src="./images/cloud.jpg" alt="Image cloud" width="400" height="300">
+                           <div class="lists__section--text">
+                            <h3 class="lists__section--list--heading">Lorem Ipsum</h3>
+                            <p class="lists__section--list--info">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                           </div>
+                        </li>
+                        <li class="lists__section--list">
+                            <img class="lists__section--image" src="./images/cofe.jpg" alt="Image cofe" width="400" height="300">
+                           <div class="lists__section--text">
+                            <h3 class="lists__section--list--heading">Lorem Ipsum</h3>
+                            <p class="lists__section--list--info">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                           </div>
+                        </li>
+                        <li class="lists__section--list">
+                            <img class="lists__section--image" src="./images/bear.jpg" alt="Image bear" width="400" height="300">
+                           <div class="lists__section--text">
+                            <h3 class="lists__section--list--heading">Lorem Ipsum</h3>
+                            <p class="lists__section--list--info">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                           </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="lists__section--slider"> <!-- Slider -->
+                        <li class="lists__section--slider-items">
+                            <a href="#" class="lists__section--slider--link">
+                                <<     
+                            </a>
+                        </li>
+                        <li class="lists__section--slider-items">
+                            <a href="#" class="lists__section--slider--link white">
+                                1        
+                            </a>
+                        </li>
+                        <li class="lists__section--slider-items">
+                            <a href="#" class="lists__section--slider--link">
+                                2        
+                            </a>
+                        </li>
+                        <li class="lists__section--slider-items">
+                            <a href="#" class="lists__section--slider--link">
+                                3        
+                            </a>
+                        </li>
+                        <li class="lists__section--slider-items">
+                            <a href="#" class="lists__section--slider--link">
+                                4       
+                            </a>
+                        </li>
+                        <li class="lists__section--slider-items">
+                            <a href="#" class="lists__section--slider--link">
+                                >>     
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- About section -->
+                <section class="about__section" id="2">
+                    <div class="about__section--images">
+                        <img class="about__section--images--woman" src="./images/avatar_1.jpg" alt="woman image" width="625" height="auto">
+                        <img class="about__section--images--woman" src="./images/avatar_2.jpg" alt="woman image" width="625" height="auto">
+                    </div>
+
+                    <h2 class="about__section--title">
+                        about me
+                    </h2>
+
+                    <p class="about__section--info">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+                    <div class="about__section--skills skills">
+                        <h3 class="skills__title">technical skills</h3>
+
+                        <p class="field">Photography</p>
+                        <div class="photography__graphics">
+                            <div class="photography__graphics--complate">95 %</div>
+                            <div class="photography__graphics--uncomplate"></div>
+                        </div>
+
+                        <p class="field">Web design</p>
+                        <div class="photography__graphics">
+                            <div class="photography__graphics--complate first1">85 %</div>
+                            <div class="photography__graphics--uncomplate second1"></div>
+                        </div>
+
+                        <p class="field">Photoshop</p>
+                        <div class="photography__graphics">
+                            <div class="photography__graphics--complate first2">80 %</div>
+                            <div class="photography__graphics--uncomplate second2"></div>
+                        </div>
+
+                        <button class="skills__button">download resume</button>
+                    </div>
+
+                    <div class="about__section--charge charge">
+                        <h3 class="charge__title">
+                            How much I charge
+                        </h3>
+
+                        <ul class="charge__cards cards">
+                            <li class="cards__offers offers">
+                               <ul class="offers__info">
+                                   <li class="offers__info--content dimgray">Basic</li>
+                                   <li class="offers__info--content">Web Design</li>
+                                   <li class="offers__info--content">Photography</li>
+                                   <li class="offers__info--content">1 GB Storage</li>
+                                   <li class="offers__info--content">Mail Support</li>
+                                   <li class="offers__info--content"><span class="bold-size">$ 10 per</span> <br> moment</li>
+                                   <li class="offers__info--content border__bottom">
+                                       <Button class="offers__info--content--btn">Sign Up</Button>
+                                    </li>
+                               </ul>
+                            </li>
+                            <li class="cards__offers offers">
+                                <ul class="offers__info">
+                                    <li class="offers__info--content lightgreen">Pro</li>
+                                    <li class="offers__info--content">Web Design</li>
+                                    <li class="offers__info--content">Photography</li>
+                                    <li class="offers__info--content">50 GB Storage</li>
+                                    <li class="offers__info--content">Endless Support</li>
+                                    <li class="offers__info--content"><span class="bold-size">$ 25 per</span> <br> moment</li>
+                                    <li class="offers__info--content border__bottom">
+                                        <Button class="offers__info--content--btn">Sign Up</Button>
+                                        </li>
+                                </ul>
+                             </li>
+                             <li class="cards__offers offers">
+                                <ul class="offers__info">
+                                    <li class="offers__info--content dimgray">Premium</li>
+                                    <li class="offers__info--content">Web Design</li>
+                                    <li class="offers__info--content">Photography</li>
+                                    <li class="offers__info--content">Unlimited Storage</li>
+                                    <li class="offers__info--content">Endless Support</li>
+                                    <li class="offers__info--content"><span class="bold-size">$ 25 per</span> <br> moment</li>
+                                    <li class="offers__info--content border__bottom">
+                                        <Button class="offers__info--content--btn">Sign Up</Button>
+                                    </li>
+                                </ul>
+                             </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Contact section -->
+                <section class="contact__section" id="3">
+                    <h2 class="contact__sectin--heading">
+                        Contact me
+                    </h2>
+                    <div class="contact__section--address">
+                        <ul class="address__lists">
+                            <li class="address__content">
+                                <img class="address__content--img" src="./images/icons/mail.png" alt="">
+                                <a class="address__content--mail" href="mailto:email@email.com">email@email.com</a>
+                            </li>
+                            <li class="address__content addres__green">
+                                <img class="address__content--img" src="./images/icons/map.png" alt="">
+                                <p>
+                                    Chicago, US
+                                </p>
+                            </li>
+                            <li class="address__content">
+                                <img class="address__content--img" src="./images/icons/phone.png" alt="">
+                                <p>512312311</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Form -->
+                    <form class="contact__section--form" action="http://echo.htmlacademy.ru" target="_blank" method="POST" enctype="multipart/form-data">
+                        <label class="form__lable" for="name">Name</label>
+                        <div>
+                        <input class="value1 form__input" type="text" id="name" name="Name" required>
+                        </div>
+
+                        <label class="form__lable" for="email">Email</label>
+                        <div>
+                        <input class="value2 form__input" type="email" id="name" name="Email" required>
+                        </div>
+
+                        <label class="form__lable" for="message">Message</label>
+                        <div>
+                        <input class="value3 form__input" type="text" id="message" name="Message" required>
+                        </div>
+
+                        <button class="form__btn">
+                            Send Message
+                        </button>
+                    </form>
+
+                </section>
+
+                <!-- Footer -->
+                <footer class="site__footer">
+                    <div class="footer__content">
+                        <h3 class="content__title">
+                            footer
+                        </h3>
+                        <p class="content__text">
+                            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                        </p>
+                        <div class="content__box">
+                            <p class="content__by">Powered by</p>
+                            <a class="content__link" href="https://www.w3schools.com/w3css/default.asp">w3.css</a>
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <h3 class="content__title">
+                                blog posts
+                        </h3>
+
+                        <ul class="content__blogs">
+                            <li class="blogs__lorem">
+                                <img class="blogs__lorem--img" src="./images/workshop.jpg" alt="" width="50" height="50">
+                                <div class="blogs__lorem--text">
+                                    Lorem Sed mattis nunc
+                                </div>
+                            </li>
+                            <li class="blogs__ipsum">
+                                <img class="blogs__ipsum--img" src="./images/gondol.jpg" alt="" width="50" height="50">
+                                <div class="blogs__lorem--text">
+                                Ipsum Praes tinci sed
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="footer__content">
+                        <h3 class="content__title">
+                            popular tags
+                        </h3>
+
+                        <ul class="content__popular">
+                            <li class="content__popular--tags footer__black">
+                                Travel
+                            </li>
+                            <li class="content__popular--tags">
+                                New York
+                            </li>
+                            <li class="content__popular--tags">
+                                London
+                            </li>
+                            <li class="content__popular--tags">
+                                IKEA
+                            </li>
+                            <li class="content__popular--tags">
+                                NORWAY
+                            </li>
+                            <li class="content__popular--tags">
+                                DIY
+                            </li>
+                            <li class="content__popular--tags">
+                                Ideas
+                            </li>
+                            <li class="content__popular--tags">
+                                Baby
+                            </li>
+                            <li class="content__popular--tags">
+                                Family
+                            </li>
+                            <li class="content__popular--tags">
+                                News
+                            </li>
+                            <li class="content__popular--tags">
+                                Clothing
+                            </li>
+                            <li class="content__popular--tags">
+                                Shopping
+                            </li>
+                            <li class="content__popular--tags">
+                                Sports
+                            </li>
+                            <li class="content__popular--tags">
+                                Games
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+                <div class="info">
+                    <p class="info__title">Powered by</p>
+                    <span class="info__link" href="https://www.w3schools.com/w3css/default.asp"><a class="info__link--dimgray">w3.css</a></span>     
+                </div>
+
+            </main>
+
+        </div>
+        
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
